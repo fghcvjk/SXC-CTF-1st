@@ -1,0 +1,17 @@
+解压密码为：2021_jia_you!!
+flag 为 flag{后台名称_后台账号_后台密码_一句话木马名称_一句话密码_第三个马子执行的命令}
+例如：
+后台网址为:
+http://127.0.0.1/admin/index.php 后台名称就为: admin
+账号为：2021 后台账号为: 2021
+密码为：happy_new_year! 后台密码为: happy_new_year!
+一句话木马路径为: http://127.0.0.1/mu.php 一句话木马名称为: mu
+一句话木马 一句话密码为: starsnow
+一句话执行的命令
+连接马子 之后执行的第三条 命令
+第一条 yingzi=phpinfo();
+第二条 yingzi=system('whoami');
+第三条 yingzi=system('ls'); 第三个马子执行的命令： system('ls');
+
+例如：
+flag{admin_2021_happy_new_year!_starsnow_system('ls');}
